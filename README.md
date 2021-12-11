@@ -8,10 +8,25 @@ Create a file to store your macros (DOSKEYs).
 "C:\bat\macros.doskey"
 ```
 ls=dir $* $T
+ip=ipconfig $T
+desk=cd C:\Users\User\Desktop\ $T
+pcode=cd C:\Users\User\code $T
+gst=git status $T
+gc=git commit $T
+gco=git checkout $T
+gl=gitpull $T
+gpom=git pull origin master $T
+gp=git push $T
+gd=git diff $T
+gb=git branch $T
 up=cd.. $T
 ex=exit $T
 np=notepad $T
-dota2=E:\STEAM\steamapps\common\"dota 2 beta"\game\bin\win64\dota2.exe
+dota2=E:\STEAM\steamapps\common\"dota 2 beta"\game\bin\win64\dota2.exe $T
+overwatch=E:\BATTLENET\Overwatch\"Overwatch Launcher".exe $T
+diablo=E:\BATTLENET\"Diablo III"\"Diablo III Launcher".exe $T
+chrome=C:\"Program Files (x86)"\Google\Chrome\Application\Chrome.exe $T
+rgb=C:\"Program Files (x86)"\GIGABYTE\RGBFusion\RGBFusion.exe
 ```
 Go to the registry editor.
 ```
