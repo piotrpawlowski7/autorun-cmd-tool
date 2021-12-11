@@ -3,6 +3,7 @@ ip=ipconfig $T
 desk=cd C:\Users\User\Desktop\ $T
 pcode=cd C:\Users\User\code $T
 gst=git status $T
+ga=git add . $T
 gc=git commit $T
 gco=git checkout $T
 gl=gitpull $T
