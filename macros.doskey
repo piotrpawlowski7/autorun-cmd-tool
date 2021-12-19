@@ -1,7 +1,4 @@
-ls=dir $* $T
-ip=ipconfig $T
-desk=cd C:\Users\User\Desktop\ $T
-pcode=cd C:\Users\User\code $T
+;= command line, github
 gst=git status $T
 ga=git add . $T
 gc=git commit $T
@@ -11,7 +8,15 @@ gpom=git pull origin master $T
 gp=git push $T
 gd=git diff $T
 gb=git branch $T
+
+;= various
 up=cd.. $T
+ls=dir $* $T
+ip=ipconfig $T
+desk=cd C:\Users\User\Desktop\ $T
+
+
+;= programs open from cli
 ex=exit $T
 np=notepad $T
 dota=E:\STEAM\steamapps\common\"dota 2 beta"\game\bin\win64\dota2.exe $T
@@ -19,7 +24,25 @@ overwatch=E:\BATTLENET\Overwatch\"Overwatch Launcher".exe $T
 diablo=E:\BATTLENET\"Diablo III"\"Diablo III Launcher".exe $T
 chrome=C:\"Program Files (x86)"\Google\Chrome\Application\Chrome.exe $T
 rgb=C:\"Program Files (x86)"\GIGABYTE\RGBFusion\RGBFusion.exe $T
-cod=cd "C:\Users\User\code"
+
+;= coding 
+cod=cd "C:\Users\User\code" $T
 kodzimy=cd "C:\Users\User\code" $T code . $T
+pcode=cd C:\Users\User\code $T
+
+;= hue lights setup
+wakeup=hue lights 1,4,5 on ^&^& hue lights 1,4,5 orange ^&^& hue lights 1,4,5 =50% $T
+klimacik=hue lights 1,4,5 blue $T
+bye=hue lights 4,5 off $T
+impreza=hue lights 1,4,5 colorloop $T
+koniec=hue lights 1,4,5 clear $T
+
+;= raspberry conection
+ssh-pi=putty.exe -ssh pi@192.168.50.198 22 $T
+
+;= file configuration opening
+config=C:\bat\macros.doskey $T
+
+
 
 
