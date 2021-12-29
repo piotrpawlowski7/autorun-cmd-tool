@@ -38,3 +38,14 @@ Right-click -> New -> String Value
 Right-click it and Modify the Value data.
 Right-click -> Modify -> Value data -> DOSKEY /MACROFILE="C:\bat\macros.doskey"
 Good to go.
+
+If u dont have admin persmissions, use this way:
+```
+==> reg add "HKCU\Software\Microsoft\Command Processor" /v Autorun /d "doskey /macrofile=\"c:\bat\macros.doskey\"" /f
+The operation completed successfully.
+
+==> reg query "HKCU\Software\Microsoft\Command Processor" /v Autorun
+
+HKEY_CURRENT_USER\Software\Microsoft\Command Processor
+    Autorun    REG_SZ    doskey /macrofile="c:\bat\macros.doskey"
+```
