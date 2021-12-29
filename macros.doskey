@@ -8,6 +8,7 @@ gpom=git pull origin master $T
 gp=git push $T
 gd=git diff $T
 gb=git branch $T
+greset=git reset --hard origin/master $T
 
 ;= various
 up=cd.. $T
@@ -26,13 +27,14 @@ chrome=C:\"Program Files (x86)"\Google\Chrome\Application\Chrome.exe $T
 rgb=C:\"Program Files (x86)"\GIGABYTE\RGBFusion\RGBFusion.exe $T
 
 ;= coding 
-cod=cd "C:\Users\User\code" $T
-kodzimy=cd "C:\Users\User\code" $T code . $T
-pcode=cd C:\Users\User\code $T
+cod=cd "C:\Users\ppawlowski002\code" $T
+kodzimy=cd "C:\Users\ppawlowski002\code" $T code . $T
+pcode=cd C:\Users\ppawlowski002\code $T
+docs=cd "C:\Users\ppawlowski002\code\pwc-gx-cee\pl_online" && docsify serve ./docs $T
 
 ;= hue lights setup
 wakeup=hue lights 1,4,5 on ^&^& hue lights 1,4,5 orange ^&^& hue lights 1,4,5 =50% $T
-klimacik=hue lights 1,4,5 blue $T
+klimacik=hue lights 1,4,5 on ^&^& hue lights 1,4,5 blue $T
 bye=hue lights 4,5 off $T
 impreza=hue lights 1,4,5 colorloop $T
 koniec=hue lights 1,4,5 clear $T
@@ -42,6 +44,7 @@ ssh-pi=putty.exe -ssh pi@192.168.50.198 22 $T
 
 ;= file configuration opening
 config=C:\bat\macros.doskey $T
+config-push= cd "C:\bat" && git add . && git commit -m "update" && git push origin master $T
 
 
 
