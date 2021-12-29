@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 ls=dir $* $T
 ip=ipconfig $T
 desktop="cd C:\Users\User\Desktop\" $T
 pcode=cd C:\Users\User\code $T
+=======
+;= command line, github
+>>>>>>> be41eea6c1396dfe2f6e23966a1065c0d8664f33
 gst=git status $T
 ga=git add . $T
 gc=git commit $T
@@ -11,14 +15,46 @@ gpom=git pull origin master $T
 gp=git push $T
 gd=git diff $T
 gb=git branch $T
+
+;= various
 up=cd.. $T
+ls=dir $* $T
+ip=ipconfig $T
+desk=cd C:\Users\User\Desktop\ $T
+
+
+;= programs open from cli
 ex=exit $T
 np=notepad $T
 chrome=C:\"Program Files (x86)"\Google\Chrome\Application\Chrome.exe $T
+<<<<<<< HEAD
 premiere=C:\"Program Files"\Adobe\"Adobe Premiere Pro 2022"\"Adobe Premiere Pro".exe $T
 psd=C:\"Program Files"\Adobe\"Adobe Photoshop 2021"\Photoshop.exe $T
 xd=C:\"Program Files"\WindowsApps\Adobe.CC.XD_40.1.22.3_x64__adky2gkssdxte\XD.exe $T
 cod=cd "C:\Users\js\codejs" $T
 kodzimy=cd "C:\Users\js\codejs" $T code . $T
+=======
+rgb=C:\"Program Files (x86)"\GIGABYTE\RGBFusion\RGBFusion.exe $T
+
+;= coding 
+cod=cd "C:\Users\User\code" $T
+kodzimy=cd "C:\Users\User\code" $T code . $T
+pcode=cd C:\Users\User\code $T
+
+;= hue lights setup
+wakeup=hue lights 1,4,5 on ^&^& hue lights 1,4,5 orange ^&^& hue lights 1,4,5 =50% $T
+klimacik=hue lights 1,4,5 blue $T
+bye=hue lights 4,5 off $T
+impreza=hue lights 1,4,5 colorloop $T
+koniec=hue lights 1,4,5 clear $T
+
+;= raspberry conection
+ssh-pi=putty.exe -ssh pi@192.168.50.198 22 $T
+
+;= file configuration opening
+config=C:\bat\macros.doskey $T
+
+
+>>>>>>> be41eea6c1396dfe2f6e23966a1065c0d8664f33
 
 
